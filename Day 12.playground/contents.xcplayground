@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Classes'/>
+        <page name='Inheritance'/>
+        <page name='Initialisers'/>
+        <page name='Copy Classes'/>
+        <page name='De-Initialisers'/>
+        <page name='Variables Inside Classes'/>
+        <page name='Checkpoint 7'/>
+    </pages>
+</playground>

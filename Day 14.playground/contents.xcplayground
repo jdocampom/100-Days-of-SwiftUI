@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Handle Optionals with If-Let'/>
+        <page name='Handle Optionals with Guard-Let'/>
+        <page name='Nil Coalescing'/>
+        <page name='Optional Chainning'/>
+        <page name='Handle Function Errors with Optionals'/>
+        <page name='Checkpoint 9'/>
+    </pages>
+</playground>

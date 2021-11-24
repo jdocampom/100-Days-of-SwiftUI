@@ -53,7 +53,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.leading)
                 }
             }
-            .navigationBarTitle("Unit Conversions")
+            .navigationBarTitle("Temp. Conversion")
         }
     }
 }

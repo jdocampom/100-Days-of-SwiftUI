@@ -51,8 +51,19 @@ struct ContentView: View {
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Change View", action: test)
+                }
+                
+            }
         }
     }
+    
+    func test() {
+        print("Tapped")
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

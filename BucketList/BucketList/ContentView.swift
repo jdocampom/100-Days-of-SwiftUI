@@ -12,6 +12,7 @@ import MapKit
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject private var viewModel = ViewModel()
 
     var body: some View {
@@ -26,7 +27,6 @@ struct ContentView: View {
                                 .frame(width: 44, height: 44)
                                 .background(.white)
                                 .clipShape(Circle())
-
                             Text(location.name)
                                 .fixedSize()
                         }
@@ -36,18 +36,14 @@ struct ContentView: View {
                     }
                 }
                 .ignoresSafeArea()
-
                 Circle()
                     .fill(.blue)
                     .opacity(0.3)
                     .frame(width: 32, height: 32)
-
                 VStack {
                     Spacer()
-
                     HStack {
                         Spacer()
-
                         Button {
                             viewModel.addLocation()
                         } label: {
@@ -77,6 +73,7 @@ struct ContentView: View {
             .clipShape(Capsule())
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -26,7 +26,7 @@ struct EditView: View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Place name", text: $name)
+                    TextField("Place Name", text: $name)
                     TextField("Description", text: $description)
                 }
 
@@ -43,11 +43,11 @@ struct EditView: View {
                                 .italic()
                         }
                     case .failed:
-                        Text("Please try again later.")
+                        Text("Try again later.")
                     }
                 }
             }
-            .navigationTitle("Place details")
+            .navigationTitle("Place Details")
             .toolbar {
                 Button("Save") {
                     var newLocation = location

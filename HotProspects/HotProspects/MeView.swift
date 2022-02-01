@@ -24,29 +24,29 @@ struct MeView: View {
                 Section(header: Text("Name")) {
                     TextField("Name", text: $name)
                         .textContentType(.name)
-                        .font(.title)
                 }
                 Section(header: Text("Email Address")) {
                     TextField("Email Address", text: $emailAddress)
                         .textContentType(.emailAddress)
-                        .font(.title)
                 }
                 Section(header: Text("QR Code")) {
-                    Spacer()
-                    Image(uiImage: qrCode)
-                        .resizable()
-                        .interpolation(.none)
-                        .scaledToFit()
-                        .frame(width: 200, height: 200)
-                        .contextMenu {
-                            Button {
-                                let imageSaver = ImageSaver()
-                                imageSaver.writeToPhotoAlbum(image: qrCode)
-                            } label: {
-                                Label("Save to Photos", systemImage: "square.and.arrow.down")
+                    HStack {
+                        Spacer()
+                        Image(uiImage: qrCode)
+                            .resizable()
+                            .interpolation(.none)
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                            .contextMenu {
+                                Button {
+                                    let imageSaver = ImageSaver()
+                                    imageSaver.writeToPhotoAlbum(image: qrCode)
+                                } label: {
+                                    Label("Save to Photos", systemImage: "square.and.arrow.down")
+                                }
                             }
-                        }
-                    Spacer()
+                        Spacer()
+                    }
                 }
             }
             .navigationTitle("Me")
